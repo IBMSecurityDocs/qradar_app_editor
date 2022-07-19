@@ -1,4 +1,3 @@
-#QRadar App Editor
 
 -   [QRadar App Editor](c_app_editor_overview.html)
     -   [What's new in the QRadar App Editor](c_app_editor_whats_new.html)
