@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+
+<meta name="dcterms.rights" content="© Copyright IBM Corporation 2022">
+
+
+
+<meta name="description" content="Edit and create files and folders in the app editor tab, which is created on the QRadar Console.">
+
+<meta name="geo.country" content="ZZ">
+<script>
+    digitalData = {
+      page: {
+        pageInfo: {
+  language: "en-us",
+
+  version: "v18",
+  ibm: {
+  country: "ZZ",
+  type: "CT701"
+  
+         }
+       }
+     }
+   };
+  </script><!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="ibmdita.css">
+<link rel="Start" href="c_app_editor_overview.html">
+<title>Editing apps in the editor</title>
+</head>
+<body id="task_uns_czw_kz"><main role="main"><article role="article" aria-labelledby="d4825e10">
+<h1 class="topictitle1" id="d4825e10">Editing apps in the editor</h1>
+
+
+<div class="body taskbody"><p class="shortdesc">Edit and create files and folders in the app editor tab, which is created on the <span class="ph">QRadar®
+Console</span>. </p>
+
+<section class="section context" role="region" aria-labelledby="taskd4825e23"><div class="tasklabel"><h2 class="sectiontitle tasklabel" id="taskd4825e23">About this task</h2></div>
+<p>When you install a new app, the <span class="ph uicontrol">Hello World</span> development tab that includes
+the editor is added to the Console, and a second tab shows the <span class="ph uicontrol">Hello World</span>
+app in normal installed mode without the editor.</p>
+
+<p>The following diagram shows the first <span class="ph uicontrol">Hello World </span> app tab without the
+editor, and the <span class="ph uicontrol">Hello World - Custom Tab Development</span> tab that includes the
+editor on <span class="ph">QRadar</span>. </p>
+
+<figure class="fignone" id="task_uns_czw_kz__fig_aqgs_hl41_fwss"><figcaption>Figure 1. Hello World tabs</figcaption>
+
+<div class="image"><img src="hello_world.svg" alt="Hello World app in the user interface"></div>
+</figure>
+
+</section>
+
+<div class="tasklabel"><h2 class="sectiontitle tasklabel" id="taskd4825e56">Procedure</h2></div><ol class="steps"><li class="step stepexpand">
+<span class="cmd">To edit files in the <span class="ph filepath">app</span> folder,</span> 
+<div class="itemgroup info">double-click a file, or right-click to view the File Edit menu.</div>
+</li>
+<li class="step stepexpand">
+<span class="cmd">To create files and folders, save files, and close files, click <span class="ph uicontrol">File</span>,
+and then select an option from the menu.</span>
+</li>
+<li class="step stepexpand">
+<span class="cmd">To search for files in the app folder navigation, type the file name in the search box, and
+then click the search icon to search for your file.</span>
+</li>
+<li class="step stepexpand">
+<span class="cmd">Copy or move files from one folder to folder in the app folder navigation.</span> 
+<ol type="a" class="ol substeps">
+<li class="li substep">
+<span class="cmd">To copy a file from one folder to another folder, select the file and press the CTRL key, and
+then use your mouse to drag the file to the destination folder.</span>
+</li>
+
+<li class="li substep">
+<span class="cmd">To move a file from one folder to another folder, select the file by using  your mouse, and
+drag the file to the destination folder. </span>
+</li>
+
+</ol>
+
+</li>
+<li class="step stepexpand">
+<span class="cmd">To upload files to the app folder, use any of the following three ways to open the
+<span class="keyword wintitle">Upload File</span> screen:</span> 
+<ul class="ul choices">
+<li class="li choice">Click <span class="ph menucascade"><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">File</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> Upload</span></span>, and then drag a file in the box, or browse to a file.</li>
+
+<li class="li choice">In the app folder navigation, select a folder, and then right-click to open the
+<span class="keyword wintitle">Upload File</span> screen.</li>
+
+<li class="li choice">In the app folder navigation, select a folder, and then drag a file over the folder to open
+the <span class="keyword wintitle">Upload File</span> screen.</li>
+
+</ul>
+
+</li>
+<li class="step stepexpand">
+<span class="cmd">To deploy an app or export an app, click the <span class="ph uicontrol">Actions</span> menu and choose one
+of the following options:</span> 
+<ul class="ul choices">
+<li class="li choice">Click <span class="ph menucascade"><span class="ph uicontrol">Actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> Deploy App </span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">in Development Mode</span></span> to deploy and upgrade the current app in development mode.<p>When you make changes,
+such as editing the manifest or other files, you deploy and upgrade the app in development mode to
+apply your changes. The app version in the manifest file increments when you deploy an
+app.</p>
+<p>When you deploy your app in development mode, you have the option to save a copy of the
+current app in <span class="ph filepath">.zip</span> format.</p>
+</li>
+
+<li class="li choice">Click <span class="ph menucascade"><span class="ph uicontrol">Actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> Deploy App</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> in Live Mode</span></span> to view the app in <span class="ph">QRadar</span>. <p>Before, you deploy the
+app <span class="ph uicontrol"> in Live Mode</span>, it's good practice to save your app locally, otherwise you
+can't access your changes after the app is deployed because the editor tab is removed.</p>
+<p>The
+development mode tab that includes the App Editor is removed from the Console when you deploy the
+app <span class="ph uicontrol"> in Live Mode</span>. If you want to edit the app again, you must export it as a
+<span class="ph filepath">.zip</span> file so that you can import it to <span class="ph">QRadar</span> and edit it at a later
+time.</p>
+</li>
+
+<li class="li choice">Click <span class="ph menucascade"><span class="ph uicontrol">Actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> Export App</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> as Zip</span></span> to save your app in a local folder. <p>The app is saved as an archive
+(<span class="ph filepath">.zip</span>) file, which you can import as an existing app later. The
+<span class="ph filepath">.zip</span> file that you export is not an app extension that can be installed by
+using the <span class="ph uicontrol">Extensions Management</span> tool on the <span class="ph uicontrol">Admin</span> tab.
+</p>
+<p>When you export the app, the app version in the manifest displays in the export dialog box.
+When you change the version that appears in the export dialog box, the app version in the manifest
+file version is changed to the same version.</p>
+
+</li>
+
+<li class="li choice">Click <span class="ph menucascade"><span class="ph uicontrol">Actions</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> Delete App</span></span> to delete the app that you're editing. The app is removed from the <span class="ph">QRadar
+Console</span>. <div class="p">
+<div class="note"><span class="notetitle">Note:</span> If you make changes to the app, ensure that you export the app so that your changes are saved
+in the exported zip file and you can install the app again later. The <span class="ph menucascade"><span class="ph uicontrol">File</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"> Save</span></span> function saves the session only in QRadar, and does not write to the compressed file,
+so these changes are lost because the app files are removed when you delete the app.</div>
+
+</div>
+</li>
+
+</ul>
+
+
+</li>
+</ol>
+
+</div>
+
+<aside role="complementary" aria-labelledby="d4825e10"><nav role="navigation">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a data-hd-otherprops="html_only" href="c_app_editor_overview.html" title="Develop and edit apps directly in IBM QRadar by using the QRadar App Editor.">QRadar App Editor</a></div>
+</div>
+</nav></aside></article></main></body></html>

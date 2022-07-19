@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+
+<meta name="dcterms.rights" content="© Copyright IBM Corporation 2022">
+
+
+
+<meta name="description" content="Learn about the known issues in each IBM QRadar App Editor release.">
+
+<meta name="geo.country" content="ZZ">
+<script>
+    digitalData = {
+      page: {
+        pageInfo: {
+  language: "en-us",
+
+  version: "v18",
+  ibm: {
+  country: "ZZ",
+  type: "CT701"
+  
+         }
+       }
+     }
+   };
+  </script><!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="ibmdita.css">
+<link rel="Start" href="c_app_editor_overview.html">
+<title>Known issues</title>
+</head>
+<body id="concept_ljn_klw_bpb"><main role="main"><article role="article" aria-labelledby="d3792e10">
+<h1 class="topictitle1" id="d3792e10">Known issues</h1>
+
+
+
+
+
+<div class="body conbody"><p class="shortdesc">Learn about the known issues in each <span class="ph">IBM®
+QRadar®</span> App Editor
+release.</p>
+
+<section class="section" role="region" aria-labelledby="d3792e27"><h2 class="sectiontitle" id="d3792e27">Version 3.0</h2>
+
+<p>The following problems and limitations are known to impact the <span class="ph">QRadar</span> App Editor 3.0.</p>
+
+<ul>
+<li>An error occurs if you move a file into the <span class="ph filepath">/opt/app-root</span> root directory in
+the editor.<div class="note tip"><span class="tiptitle">Tip:</span> An error does not occur when you create, delete, and edit files in the
+directory.</div>
+</li>
+
+<li>The App Editor does not fully support app dependencies. Errors might occur if you install an app
+with dependencies.</li>
+
+<li>The App Editor supports Flask apps only.</li>
+
+<li>The App Editor supports HTTP proxies in the bootstrapper only.</li>
+
+<li>Apps in version 3.0 must follow the Flask application factory method, their app's
+<code class="ph codeph">__init__.py</code> file must include the function <code class="ph codeph">create_app()</code> that
+returns a <code class="ph codeph">Flask</code> instance. For more information, see <a href="https://pythonise.com/series/learning-flask/application-factory-pattern-%7C-learning-flask-ep.-30" rel="noopener" target="_blank" title="(Opens in a new tab or window)">https://pythonise.com/series/learning-flask/application-factory-pattern-%7C-learning-flask-ep.-30</a>.</li>
+
+<li>Apps in version 3.0 support <span class="ph">QRadar</span> App Framework V2 apps
+only.<div class="note tip"><span class="tiptitle">Tip:</span> The <span class="ph">QRadar</span> App Editor does not provide any automatic migration tools. Instead, users can follow the
+instructions to migrate an app from <span class="ph">QRadar</span> App Framework V1 to V2. For
+more information, see <a href="https://www.ibm.com/support/knowledgecenter/SS42VS_SHR/com.ibm.appfw_md.doc/docs/tutorials/migrating_from_app_framework_v1_to_v2.html" rel="noopener" target="_blank" title="(Opens in a new tab or window)">https://www.ibm.com/support/knowledgecenter/SS42VS_SHR/com.ibm.appfw_md.doc/docs/tutorials/migrating_from_app_framework_v1_to_v2.html</a>.</div>
+</li>
+
+</ul>
+
+</section>
+
+</div>
+
+<aside role="complementary" aria-labelledby="d3792e10"><nav role="navigation">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a data-hd-otherprops="html_only" href="c_app_editor_overview.html" title="Develop and edit apps directly in IBM QRadar by using the QRadar App Editor.">QRadar App Editor</a></div>
+</div>
+</nav></aside></article></main></body></html>
