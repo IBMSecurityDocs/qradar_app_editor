@@ -1,4 +1,1 @@
 remote_theme: just-the-docs/just-the-docs
-repository: IBMSecurityDocs/qradar_app_editor
-exclude: [scripts, templates, README.md, README.public.md, STYLE_GUIDE.md, Makefile, lint-rules.json, Gemfile*]
-include: [docs, docs/*, index.md]
